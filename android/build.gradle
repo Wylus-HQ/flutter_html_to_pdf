@@ -1,3 +1,8 @@
+plugins {
+    id "com.android.library"
+    id "org.jetbrains.kotlin.android"
+}
+
 group 'com.afur.flutter_html_to_pdf'
 version '1.0-SNAPSHOT'
 
@@ -21,10 +26,8 @@ rootProject.allprojects {
     }
 }
 
-apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
-
 android {
+    namespace "com.afur.flutter_html_to_pdf"
     compileSdkVersion 30
 
     compileOptions {
